@@ -1,15 +1,16 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Signup } from './Pages/Signup';
-import { SignIn } from "./Pages/Signin";
-import { Dashboard } from "./Pages/Home";
-import { TrendingPage } from "./Pages/Trending";
-import { Play } from "./Pages/PlayVideo";
-import { Search} from "./Pages/SearchPage";
-import {Subscriptions} from "./Pages/Subscriptions"
-import { Profile } from "./Pages/Profile";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Signup } from './pages/Signup';
+import { SignIn } from "./pages/Signin";
+import { Dashboard } from "./pages/Home";
+import { TrendingPage } from "./pages/Trending";
+import { Play } from "./pages/PlayVideo";
+import { Search } from "./pages/SearchPage";
+import { Subscriptions } from "./pages/Subscriptions";
+import { Profile } from "./pages/Profile";
+
 
 import './Styles/App.css';
-import './Styles/index.css'
+import './Styles/index.css';
 
 function App() {
   return (
@@ -17,13 +18,14 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<SignIn/>}/>
-          <Route path="/home" element={<Dashboard/>}/>
-          <Route path="/trending" element={<TrendingPage/>}/>
-          <Route path="/watch/:videoId" element={<Play />} /> 
+          <Route path="/login" element={<SignIn />} />
+          <Route path="/home" element={<Dashboard />} />
+          <Route path="/trending" element={<TrendingPage />} />
+          <Route path="/watch/:videoId" element={<Play />} />
           <Route path="/search" element={<Search />} />
-          <Route path="/subscriptions" element={<Subscriptions/>}/>
-          <Route  path="/profile" element={<Profile/>}/>
+          <Route path="/subscriptions" element={<Subscriptions />} />
+          <Route path="/profile" element={<Profile />} />
+          
         </Routes>
       </div>
     </Router>

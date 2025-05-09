@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FiHome, FiLogOut } from "react-icons/fi";
-import trending from "../Assets/Icons/trending.png";
-import subscription from "../Assets/Icons/subscription.png";
-import library from "../Assets/Icons/library.png";
-import profile from "../Assets/Icons/profile.png";
+import trending from "../assets/Icons/trending.png";
+import subscription from "../assets/Icons/subscription.png";
+import profile from "../assets/Icons/profile.png";
 
 export const Sidebar = ({ isCollapsed, category, setCategory }) => {
   const navigate = useNavigate();

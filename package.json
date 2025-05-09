@@ -2,7 +2,7 @@
   "name": "beebox",
   "version": "0.1.0",
   "private": true,
-   "homepage": "https://ghaniya01.github.io/beebox",
+  "homepage": "https://ghaniya01.github.io/beebox/home",
   "dependencies": {
     "@react-oauth/google": "^0.12.1",
     "@tailwindcss/vite": "^4.0.8",
@@ -26,8 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

@@ -1,7 +1,7 @@
-import { PlayVideo } from "../Components/Video";
+import { PlayVideo } from "../components/Video";
 import { useState } from "react";
-import { Sidebar } from "../Components/Sidebar";
-import { Navbar } from "../Components/Navbar";
+import { Sidebar } from "../components/Sidebar";
+import { Navbar } from "../components/Navbar";
 
 export const Play = () => {
     const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);

@@ -1,5 +1,5 @@
-import { SignUpForm } from "../Forms/SignupForm";
-import logo from "../Assets/Images/logo.png";
+import { SignUpForm } from "../forms/SignupForm";
+import logo from "../assets/Images/logo.png";
 
 export const Signup = () => {
   return (

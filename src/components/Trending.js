@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { API_KEY } from "../Data";
 import { Link } from "react-router-dom";
 
 export const Trending = ({ isCollapsed }) => {
   const [videos, setVideos] = useState([]);
+  const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+
 
   const fetchData = async () => {
     try {

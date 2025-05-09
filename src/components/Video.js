@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { API_KEY } from "../Data"; 
 import { FiHeart, FiSave } from "react-icons/fi"; 
 
 export const PlayVideo = () => {
@@ -8,6 +7,8 @@ export const PlayVideo = () => {
   const [videoDetails, setVideoDetails] = useState(null);
   const [channelDetails, setChannelDetails] = useState(null);
   const [comments, setComments] = useState([]); 
+  const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+
 
   //  Fetch video details
   const fetchVideoDetails = async () => {

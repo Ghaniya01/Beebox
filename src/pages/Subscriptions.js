@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Navbar } from "../Components/Navbar";
-import { Subscription } from '../Components/Subscription';
-import { Sidebar } from "../Components/Sidebar";
+import { Navbar } from "../components/Navbar";
+import { Subscription } from '../components/Subscription';
+import { Sidebar } from "../components/Sidebar";
 
 export const Subscriptions = () => {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);

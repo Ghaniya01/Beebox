@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { API_KEY } from "../Data";
 
 export const Subscription = () => {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+
 
   useEffect(() => {
     const fetchSubscriptionsAndVideos = async () => {

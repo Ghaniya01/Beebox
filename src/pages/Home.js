@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Navbar } from "../Components/Navbar";
-import { Sidebar } from "../Components/Sidebar";
-import { ForYou } from "../Components/ForYou";
+import { Navbar } from "../components/Navbar";
+import { Sidebar } from "../components/Sidebar";
+import { ForYou } from "../components/ForYou";
 
 export const Dashboard = () => {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);

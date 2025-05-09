@@ -1,7 +1,7 @@
-import { Navbar } from "../Components/Navbar";
-import { Sidebar } from "../Components/Sidebar";
+import { Navbar } from "../components/Navbar";
+import { Sidebar } from "../components/Sidebar";
 import { useState } from "react";
-import { SearchResults } from "../Components/Search";
+import { SearchResults } from "../components/Search";
 
 export const Search = () => {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);

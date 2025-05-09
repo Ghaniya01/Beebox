@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import menu from "../Assets/Icons/menu.png";
-import minilogo from "../Assets/Icons/minilogo.png";
-import mute from "../Assets/Icons/mute.png";
+import menu from "../assets/Icons/menu.png";
+import minilogo from "../assets/Icons/minilogo.png";
+import mute from "../assets/Icons/mute.png";
 import { FiBell, FiSearch } from "react-icons/fi";
-import profilepicture from "../Assets/Images/profilepicture.png";
+import profilepicture from "../assets/Images/profilepicture.png";
 import { Upload } from "./Upload";
 
 export const Navbar = ({ toggleSidebar, toggleMobileSidebar }) => {

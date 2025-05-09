@@ -1,6 +1,6 @@
-import uploadvideo from "../Assets/Icons/uploadvideo.png";
-import cancel from "../Assets/Icons/cancel.png";
-import upload from "../Assets/Icons/upload.png";
+import uploadvideo from "../assets/Icons/uploadvideo.png";
+import cancel from "../assets/Icons/cancel.png";
+import upload from "../assets/Icons/upload.png";
 import { useState } from "react";
 import VideoUploader from "./VideoUploader";
 

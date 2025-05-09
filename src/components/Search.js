@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import { API_KEY } from "../Data";
 import { Link } from "react-router-dom";
 
 export const SearchResults = () => {
   const [searchParams] = useSearchParams();
   const query = searchParams.get("q"); // ✅ Get search query from URL
   const [videos, setVideos] = useState([]);
+  const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+
 
   useEffect(() => {
     if (query) {

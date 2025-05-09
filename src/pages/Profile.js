@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { API_KEY } from '../Data';
-import { Sidebar } from '../Components/Sidebar';
-import { Navbar } from '../Components/Navbar';
+import { Sidebar } from '../components/Sidebar';
+import { Navbar } from '../components/Navbar';
 
 export const Profile = () => {
   const [channelInfo, setChannelInfo] = useState(null);
@@ -12,6 +11,8 @@ export const Profile = () => {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
   const [category, setCategory] = useState(0);
+  const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+
 
   useEffect(() => {
     const accessToken = localStorage.getItem('yt_access_token');

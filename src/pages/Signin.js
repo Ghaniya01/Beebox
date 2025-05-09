@@ -1,5 +1,5 @@
-import { LogIn } from "../Forms/LoginForm2";
-import logo from "../Assets/Images/logo.png"
+import { LogIn } from "../forms/LoginForm2";
+import logo from "../assets/Images/logo.png"
 
 export const SignIn = () => {
     return(
