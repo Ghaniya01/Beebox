@@ -11,7 +11,7 @@ export const LogIn = () => {
       const accessToken = tokenResponse.access_token;
       localStorage.setItem("yt_access_token", accessToken);
       console.log("Google Login Success:", accessToken);
-      navigate("/home"); 
+      navigate("/"); 
     },
     onError: () => {
       console.error("Google Sign-In failed");

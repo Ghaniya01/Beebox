@@ -11,7 +11,7 @@ import { Profile } from "./pages/Profile";
 import './Styles/App.css';
 import './Styles/index.css';
 
-// Automatically set basename based on environment
+
 const basename = process.env.NODE_ENV === 'production' ? "/beebox" : "/";
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
     <Router basename={basename}>
       <div className="App">
         <Routes>
+          <Route path="/" element={<Dashboard />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<SignIn />} />
-          <Route path="/" element={<Dashboard />} />
           <Route path="/trending" element={<TrendingPage />} />
           <Route path="/watch/:videoId" element={<Play />} />
           <Route path="/search" element={<Search />} />

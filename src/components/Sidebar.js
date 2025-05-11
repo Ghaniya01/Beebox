@@ -38,13 +38,15 @@ export const Sidebar = ({ isCollapsed, category, setCategory }) => {
     <div className={sidebarClass}>
       {/* Top Menu Items */}
       <div className="flex flex-col gap-12">
-        <button
-          onClick={() => handleCategorySelection(0, "Home")}
-          className={buttonClass(selected === "home")}
-        >
-          <FiHome size={24} />
-          {!isCollapsed && <span className="font-semibold">Home</span>}
-        </button>
+        
+      <button
+       onClick={() => handleCategorySelection(0, "/")}
+        className={buttonClass(selected === "/")}
+      >
+       <FiHome size={24} />
+       {!isCollapsed && <span className="font-semibold">Home</span>}
+       </button>
+
 
         <button
           onClick={() => handleCategorySelection(1, "Trending")}
