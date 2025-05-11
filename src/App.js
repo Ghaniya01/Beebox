@@ -12,11 +12,10 @@ import './Styles/App.css';
 import './Styles/index.css';
 
 
-const basename = process.env.NODE_ENV === 'production' ? "/beebox" : "/";
 
 function App() {
   return (
-    <Router basename={basename}>
+    <Router >
       <div className="App">
         <Routes>
           <Route path="/" element={<Dashboard />} />
