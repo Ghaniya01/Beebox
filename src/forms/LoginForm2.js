@@ -4,9 +4,8 @@ import { useGoogleLogin } from "@react-oauth/google";
 export const LogIn = () => {
   const navigate = useNavigate();
 
- const login = useGoogleLogin({
+const login = useGoogleLogin({
   scope: "https://www.googleapis.com/auth/youtube.readonly",
-  redirect_uri: "https://ghaniya01.github.io/beebox", 
   onSuccess: (tokenResponse) => {
     const accessToken = tokenResponse.access_token;
     localStorage.setItem("yt_access_token", accessToken);
@@ -17,7 +16,7 @@ export const LogIn = () => {
     console.error("Google Sign-In failed");
   },
 });
-;
+
 
   return (
     <div className="h-[400px] w-full bg-black flex items-left items-center px-4">
