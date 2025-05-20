@@ -161,7 +161,7 @@ export const SignUpForm = () => {
                 <p className="text-white text-lg">Already have an account?</p>
                 <button 
                     type="button" 
-                    onClick={() => navigate("/login")}
+                    onClick={() => navigate("/")}
                     className="bg-white text-black w-full sm:w-[127px] h-[66px] text-[20px] font-bold rounded-lg">
                     Log In
                 </button>

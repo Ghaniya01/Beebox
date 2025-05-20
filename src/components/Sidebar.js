@@ -22,7 +22,7 @@ export const Sidebar = ({ isCollapsed, category, setCategory }) => {
 
   const handleLogout = () => {
     localStorage.removeItem("yt_access_token");
-    navigate("/login"); // Change to your actual login route
+    navigate("/"); // Change to your actual login route
   };
 
   const sidebarClass = `
@@ -40,8 +40,8 @@ export const Sidebar = ({ isCollapsed, category, setCategory }) => {
       <div className="flex flex-col gap-12">
         
       <button
-       onClick={() => handleCategorySelection(0, "/")}
-        className={buttonClass(selected === "/")}
+       onClick={() => handleCategorySelection(0, "dashboard")}
+        className={buttonClass(selected === "dashboard")}
       >
        <FiHome size={24} />
        {!isCollapsed && <span className="font-semibold">Home</span>}
