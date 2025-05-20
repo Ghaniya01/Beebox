@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/beebox/static/css/main.7de6981d.css",
-    "main.js": "/beebox/static/js/main.ae206b16.js",
+    "main.css": "/beebox/static/css/main.9563bc17.css",
+    "main.js": "/beebox/static/js/main.58a1c910.js",
     "static/js/453.ab2ac214.chunk.js": "/beebox/static/js/453.ab2ac214.chunk.js",
     "static/media/logo.png": "/beebox/static/media/logo.68bbebaa18f3ddff4b22.png",
     "index.html": "/beebox/index.html",
-    "main.7de6981d.css.map": "/beebox/static/css/main.7de6981d.css.map",
-    "main.ae206b16.js.map": "/beebox/static/js/main.ae206b16.js.map",
+    "main.9563bc17.css.map": "/beebox/static/css/main.9563bc17.css.map",
+    "main.58a1c910.js.map": "/beebox/static/js/main.58a1c910.js.map",
     "453.ab2ac214.chunk.js.map": "/beebox/static/js/453.ab2ac214.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7de6981d.css",
-    "static/js/main.ae206b16.js"
+    "static/css/main.9563bc17.css",
+    "static/js/main.58a1c910.js"
   ]
 }
